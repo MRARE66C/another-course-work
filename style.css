@@ -17,16 +17,25 @@ p{
 
 header{
     background-color:#6495ED;
-    text-align: center;
+    width: 100%;
+    height: 3rem;
+    border-bottom: 0.2rem solid gray;
+    display: flex;
+    align-items: center;
 }
 
 header h1{
-    margin-bottom: 2px;
+    margin: 0.5rem 0 0 0.5rem;
     color: white;
-    
+    justify-content: space-between;
+}
+
+.logo{
+    width: 50%;
 }
 
 nav a{
+    margin-top: 0.5rem;
     padding: 5px;
 }
 
@@ -44,15 +53,6 @@ img{
 .justin-getting-fuk{
     width: 75%;
     height: auto;
-}
-
-article{
-    margin: 0 0 0 10px;
-    
-}
-
-article p{
-    margin: 5px;
 }
 
 a:link {
@@ -115,21 +115,6 @@ footer{
     }
 }
 
-.posted{
-    font-style: italic;
-    font-size: 12px;
-}
-
-.related-posts{
-    font-weight: bold;
-    & p{
-        font-size: 15px;
-    }
-    & li{
-        list-style: none;
-    }
-}
-
 button{
     font-size:20px;
     padding: 10px 5px;
@@ -137,26 +122,6 @@ button{
     position: fixed;
     bottom: 50px;
     right: 50px;
-}
-
-aside{
-    width: 50%;
-    margin: 0 auto;
-    border-top: 5px solid gray;
-    border-bottom: 5px solid gray;
-
-    & ul{
-        margin: 10px 0;
-    }
-
-    & li{
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    & img{
-        margin: 0 auto;
-    }
 }
 
 .title::after{
@@ -169,4 +134,64 @@ aside{
     position: absolute;
     top: -5px;
     right: -60px;
+}
+
+
+.author{
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    & .poster-pic{
+        width: 2rem;
+        height: 2rem;
+        margin: 0 1rem 0 0;
+    }
+    & .posted{
+        font-size: 1rem;
+    }
+}
+
+
+article{
+    width: 800px;
+    margin: 0 0 0 10px;
+}
+
+article p{
+    margin: 5px;
+}
+
+aside{
+    width: 300px;
+    margin: 0 auto;
+    border-top: 5px solid gray;
+    border-bottom: 5px solid gray;
+    box-sizing: border-box;
+}
+
+.related-posts{
+    font-weight: bold;
+    & p{
+        font-size: 15px;
+    }
+
+    & ul{
+        padding: 0;
+    }
+    
+    & li{
+        list-style: none;
+        text-align: center;
+    }
+}
+
+footer{
+    clear: both;
+}
+
+.main{
+    display: flex;
 }

@@ -1,11 +1,22 @@
 body{
     font-family: Roboto;
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0;
 }
 
 .container{
-    width: 825px;
+    width: 900px;
     margin: 100px auto;
     border: 5px solid black;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    clear:both
 }
 
 h1{
@@ -13,25 +24,8 @@ h1{
     background-color: black;
     color: white;
 }
-
-.hitbox-img{
-    width: 500px;
-    margin:0 auto;
-    display: block;
-}
-
 article{
     margin-left: 10px;
-}
-
-.price{
-    font-size: 25px;
-}
-
-.shipping{
-    font-size: 15px;
-    color: gray;
-    text-transform: uppercase;
 }
 
 .more-information{
@@ -60,9 +54,101 @@ article{
     cursor: pointer;
     text-decoration: none;
     display: block;
+    clear:both
 }
 
 .button:hover{
     background-color: white;
     color: black;
 }
+
+.sale-tag {
+    width: 75px;
+    height: 25px;
+    color: white;
+    background-color: red;
+    position: absolute;
+    top: -20px;
+    left: -40px;
+
+    & p{
+        text-align: center;
+        font-weight: bold;
+        margin-top: 3px;
+        letter-spacing: 0.2rem;
+    }
+}
+
+.color-box{
+    margin: 1.5rem 0;
+    
+    & .box{
+        display: inline-block;
+        margin-right: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 0.125rem solid black;
+    }
+
+    & .box-0{
+        background-color: black;
+    }
+
+    & .box-1{
+        background-color: blue;
+    }
+
+    & .box-2{
+        background-color: red;
+    }
+
+    & .box-3{
+        background-color: yellow;
+    }
+
+    & .box-4{
+        background-color: lime;
+    }
+
+    & .box-5{
+        background-color: brown;
+    }
+}
+ .hitbox-img{
+    width: 245px;
+    float: left;
+    margin-right: 40px;
+}
+
+.price-box{
+    width: 245px;
+    float: left;
+    margin-right: 40px;
+
+    & .price{
+        font-size: 25px;
+        float: left;
+    }
+
+    & .shipping{
+        font-size: 15px;
+        color: gray;
+        text-transform: uppercase;
+        float: right;
+    }
+
+    & .product-description{
+        clear:both;
+    }
+}
+
+.detail-box{
+    width: 245px;
+    float: left;
+
+    & .product-detail-head{
+        margin: 0
+    }
+}
+
+
