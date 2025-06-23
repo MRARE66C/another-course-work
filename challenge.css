@@ -24,9 +24,6 @@ h1{
     background-color: black;
     color: white;
 }
-article{
-    margin-left: 10px;
-}
 
 .more-information{
     font-size: 20px;
@@ -81,9 +78,10 @@ article{
 
 .color-box{
     margin: 1.5rem 0;
+    display: flex;
+    justify-content: flex-start;
     
     & .box{
-        display: inline-block;
         margin-right: 1rem;
         width: 1.5rem;
         height: 1.5rem;
@@ -116,39 +114,43 @@ article{
 }
  .hitbox-img{
     width: 245px;
-    float: left;
-    margin-right: 40px;
 }
 
 .price-box{
-    width: 245px;
-    float: left;
-    margin-right: 40px;
 
     & .price{
         font-size: 25px;
-        float: left;
     }
 
     & .shipping{
         font-size: 15px;
         color: gray;
         text-transform: uppercase;
-        float: right;
     }
 
     & .product-description{
-        clear:both;
+        margin-bottom: 0.2rem;
     }
 }
 
 .detail-box{
-    width: 245px;
-    float: left;
 
     & .product-detail-head{
         margin: 0
     }
+}
+
+.price-and-shipping{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+    align-items: center;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    column-gap: 1rem;
 }
 
 

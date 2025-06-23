@@ -22,6 +22,11 @@ header{
     border-bottom: 0.2rem solid gray;
     display: flex;
     align-items: center;
+    grid-column: 1 / -1;
+}
+
+.title-poster{
+    grid-column: 1 / -1;
 }
 
 header h1{
@@ -165,8 +170,7 @@ article p{
 }
 
 aside{
-    width: 300px;
-    margin: 0 auto;
+    width: 280px;
     border-top: 5px solid gray;
     border-bottom: 5px solid gray;
     box-sizing: border-box;
@@ -188,10 +192,13 @@ aside{
     }
 }
 
-footer{
-    clear: both;
+.container{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    row-gap: 40px;
+    align-items: start;
 }
 
-.main{
-    display: flex;
+footer{
+    grid-column: 1 / -1;
 }
