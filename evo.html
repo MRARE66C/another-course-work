@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: "Roboto", sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        table{
+            margin-top: 5rem;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        thead{
+            background-color: #223139;
+
+            & tr{
+                color: #f6fdff;
+                font-size: 1.2em;
+
+                & th{
+                    padding: 0.2rem 0.6rem;
+                }
+            }
+        }
+
+        tbody{
+            color: #ea231e;
+            & tr{
+                & td{
+                    padding: 0.2rem 0.6rem;
+                }
+            }
+
+            & tr:nth-child(odd){
+                background-color: #92e7ff;
+            }
+            & tr:nth-child(even){
+                background-color: #dbf7ff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Length</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>To the Hellfire</td>
+                <td>6:09</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Of the Abyss</td>
+                <td>5:43</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>...And I Return to Nothingness</td>
+                <td>6:10</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
